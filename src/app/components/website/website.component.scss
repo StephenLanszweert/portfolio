@@ -1,11 +1,24 @@
-h1 {
-  background-color: red;
-  padding: 2rem;
+.container {
   opacity: 0;
-  transition: 0.3s all ease-in;
+  transition: 0.2s all ease-in;
+  background-image: url("../../../assets/img/back-min.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: #373232d7;
+    z-index: 10;
+  }
 }
 
 .loaded {
   opacity: 1;
-  background-color: yellow;
+}
+
+h1 {
+  background-color: red;
+  padding: 2rem;
 }
