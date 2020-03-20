@@ -2,7 +2,8 @@
   <div id="left" [class.left-gone]="openBool" class="container-left"></div>
   <div id="right" [class.right-gone]="openBool" class="container"></div>
   <p [class.text-gone]="openBool" class="text">
-    <span class="first-word">Web</span> <span class="last-word"> designer</span>
+    <span class="first-word">{{ word.first }}</span>
+    <span class="last-word"> {{ word.last }}</span>
   </p>
   <div (click)="open()" class="more">
     <p>See more</p>
