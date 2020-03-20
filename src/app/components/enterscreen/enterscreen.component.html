@@ -5,7 +5,7 @@
     <span class="first-word">{{ word.first }}</span>
     <span class="last-word"> {{ word.last }}</span>
   </p>
-  <div (click)="open()" class="more">
+  <div [class.text-gone]="openBool" (click)="open()" class="more">
     <p>See more</p>
     <span class="material-icons">
       keyboard_arrow_down
