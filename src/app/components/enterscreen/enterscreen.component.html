@@ -1,0 +1,13 @@
+<div class="bigcontainer">
+  <div id="left" [class.left-gone]="openBool" class="container-left"></div>
+  <div id="right" [class.right-gone]="openBool" class="container"></div>
+  <p [class.text-gone]="openBool" class="text">
+    <span class="first-word">Web</span> <span class="last-word"> designer</span>
+  </p>
+  <div (click)="open()" class="more">
+    <p>See more</p>
+    <span class="material-icons">
+      keyboard_arrow_down
+    </span>
+  </div>
+</div>
