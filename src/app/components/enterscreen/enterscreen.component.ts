@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-enterscreen",
@@ -10,7 +11,7 @@ export class EnterscreenComponent implements OnInit {
   words: any[];
   wordIndex: number;
   word: any;
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {
     this.wordIndex = 0;
@@ -53,5 +54,8 @@ export class EnterscreenComponent implements OnInit {
 
   open() {
     this.openBool = true;
+    setTimeout(() => {
+      this.router.navigate([`/website`]);
+    }, 1000);
   }
 }

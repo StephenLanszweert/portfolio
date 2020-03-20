@@ -1,0 +1,11 @@
+h1 {
+  background-color: red;
+  padding: 2rem;
+  opacity: 0;
+  transition: 0.3s all ease-in;
+}
+
+.loaded {
+  opacity: 1;
+  background-color: yellow;
+}
