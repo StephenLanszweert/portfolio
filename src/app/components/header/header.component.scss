@@ -1,32 +1,50 @@
-$header-height: 15vh;
+$header-height: 16vh;
 
 .header {
   height: $header-height;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 .logo {
-  width: 13%;
-  margin-top: 1%;
-  margin-left: 5%;
-  float: left;
+  width: 25vw;
+  max-width: 200px;
+  height: auto;
+}
+
+.links {
+  width: 75vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 ul {
   padding: 4rem;
-  padding-left: 10%;
   cursor: pointer;
   font-family: "Quattrocento Sans", sans-serif;
   li {
     letter-spacing: 7px;
     text-transform: uppercase;
     border-radius: 10px;
-    padding: 2rem;
+    padding: 1.5rem;
     display: inline;
     color: #4fc2b9;
-    margin-right: 6rem;
     font-size: 1.5rem;
     &.active {
       background-color: #2674b5;
       color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 1005px) {
+  ul {
+    li {
+      letter-spacing: 0;
     }
   }
 }
