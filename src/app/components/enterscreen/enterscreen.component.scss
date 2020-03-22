@@ -6,14 +6,14 @@
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  background-color: #373232;
 }
 .container {
   transition: left 1s ease-in;
   min-width: 50vw;
   min-height: 100vh;
   position: absolute;
-  /* left: -50vw; */
-  left: 50vw;
+  left: 51vw;
   top: 0;
   background-image: url("../../../assets/img/Right.png");
   background-position: left;
@@ -27,8 +27,7 @@
   padding-left: 2px;
   min-height: 100vh;
   position: absolute;
-  /* left:-51vw; */
-  left: 0;
+  left: -1vw;
   top: 0;
   background-image: url("../../../assets/img/Left.png");
   background-position: right;

@@ -7,6 +7,7 @@ import { EnterscreenComponent } from "./components/enterscreen/enterscreen.compo
 import { RouterModule } from "@angular/router";
 import { WebsiteComponent } from "./components/website/website.component";
 import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes = [
   {
@@ -20,7 +21,7 @@ const routes = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, EnterscreenComponent, WebsiteComponent, HeaderComponent],
+  declarations: [AppComponent, EnterscreenComponent, WebsiteComponent, HeaderComponent, HomeComponent],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
   bootstrap: [AppComponent]

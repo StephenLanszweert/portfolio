@@ -1,0 +1,27 @@
+.home {
+  display: flex;
+  flex-direction: row;
+  .left,
+  .right {
+    width: 50vw;
+  }
+  .left {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-right: 2px solid black;
+    padding-right: 5%;
+    .img,
+    .home-text {
+      width: 25vw;
+    }
+    .home-text {
+      font-size: 1.5rem;
+      color: white;
+      font-family: "Quattrocento Sans", sans-serif;
+    }
+  }
+}

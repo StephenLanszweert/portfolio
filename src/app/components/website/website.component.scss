@@ -1,24 +1,35 @@
 .container {
   opacity: 0;
   transition: 0.2s all ease-in;
-  background-image: url("../../../assets/img/back-min.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  top: 14vh;
   width: 100vw;
-  height: 100vh;
-  .overlay {
-    width: 100vw;
-    height: 100vh;
-    background-color: #373232d7;
-    z-index: 10;
-  }
+  height: 200vh;
+  z-index: 1;
+  background-image: url("../../../assets/img/back-min.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.sections {
+  position: absolute;
+  top: 14vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 200vh;
+  z-index: 2;
+  background-color: #373232ab;
 }
 
 .loaded {
   opacity: 1;
 }
 
-h1 {
-  background-color: red;
-  padding: 2rem;
+section {
+  height: 100vh;
 }

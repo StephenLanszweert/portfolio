@@ -1,12 +1,19 @@
-$header-height: 16vh;
+$header-height: 14vh;
 
 .header {
+  background-color: #373232;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  padding-left: 2vw;
+  z-index: 100;
   height: $header-height;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
   align-items: center;
+  overflow-y: hidden;
 }
 .logo {
   width: 25vw;
