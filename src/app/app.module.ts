@@ -9,6 +9,7 @@ import { WebsiteComponent } from "./components/website/website.component";
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { SkillbarComponent } from './components/skillbar/skillbar.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 const routes = [
   {
@@ -22,7 +23,7 @@ const routes = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, EnterscreenComponent, WebsiteComponent, HeaderComponent, HomeComponent, SkillbarComponent],
+  declarations: [AppComponent, EnterscreenComponent, WebsiteComponent, HeaderComponent, HomeComponent, SkillbarComponent, ProjectsComponent],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
   bootstrap: [AppComponent]
