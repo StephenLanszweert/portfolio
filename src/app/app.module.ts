@@ -8,6 +8,7 @@ import { RouterModule } from "@angular/router";
 import { WebsiteComponent } from "./components/website/website.component";
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
+import { SkillbarComponent } from './components/skillbar/skillbar.component';
 
 const routes = [
   {
@@ -21,7 +22,7 @@ const routes = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, EnterscreenComponent, WebsiteComponent, HeaderComponent, HomeComponent],
+  declarations: [AppComponent, EnterscreenComponent, WebsiteComponent, HeaderComponent, HomeComponent, SkillbarComponent],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,48 @@
+$percentage: var(--percentage);
+$top_margin: 24%;
+$background-color: #4fc2b9;
+
+@function set-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000000; // Lighter backgorund, return dark color
+  } @else {
+    @return #ffffff; // Darker background, return light color
+  }
+}
+
+.bar {
+  position: relative;
+}
+.filledInBar {
+  width: 80%;
+  height: 20px;
+  border-radius: 25px;
+  border: 1px solid #4fc2b9;
+  position: relative;
+  padding: 1%;
+}
+.filledInBar:after {
+  content: "";
+  position: absolute;
+  background-color: $background-color;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: $percentage;
+}
+
+.text {
+  color: set-color($background-color);
+  position: absolute;
+  left: 3%;
+  top: $top_margin;
+  z-index: 1;
+}
+
+.percentage {
+  color: set-color(transparent);
+  position: absolute;
+  right: 20%;
+  top: $top_margin;
+  z-index: 1;
+}

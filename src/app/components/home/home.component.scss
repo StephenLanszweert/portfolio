@@ -11,13 +11,14 @@
     flex-direction: column;
   }
   .left {
+    border-right: 3px solid #4fc2b9;
     .about {
       display: flex;
       flex-flow: wrap;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
       img {
-        width: 40%;
+        width: 30%;
         border-radius: 15%;
       }
       p {
@@ -28,12 +29,49 @@
       }
     }
     .hobbies {
-      margin-left: 5%;
+      margin-left: 9%;
       margin-top: 5%;
       h1 {
         color: white;
         font-size: 2rem;
+        margin-bottom: 3%;
       }
+      .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
+        .hobby {
+          width: 25%;
+          span {
+            font-size: 5rem;
+            margin-left: auto;
+            margin-right: auto;
+            transition: color 0.2s ease-in;
+          }
+          p {
+            color: white;
+            text-align: left;
+            font-size: 1.5rem;
+          }
+          &:hover {
+            span {
+              color: #4fc2b8b4;
+            }
+          }
+        }
+      }
+    }
+  }
+  .right {
+    margin-left: 2%;
+    h1 {
+      color: white;
+      font-size: 2rem;
+    }
+    app-skillbar {
+      margin: 0 2rem;
     }
   }
 }
