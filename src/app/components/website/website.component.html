@@ -2,24 +2,6 @@
 <div class="container" [class.loaded]="loaded">
   <div class="overlay"></div>
   <div class="sections">
-    <div #section id="home">
-      <section>
-        <app-home></app-home>
-      </section>
-    </div>
-    <div id="projects" #section>
-      <app-divider text="Projects"></app-divider>
-      <section>
-        <app-projects></app-projects>
-      </section>
-    </div>
-    <div id="blog" #section>
-      <app-divider text="Blog"></app-divider>
-      <section></section>
-    </div>
-    <div id="contact" #section>
-      <app-divider text="Contact"></app-divider>
-      <section></section>
-    </div>
+    <router-outlet></router-outlet>
   </div>
 </div>

@@ -5,6 +5,7 @@ import {
   QueryList,
   ElementRef
 } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-website",
@@ -13,8 +14,7 @@ import {
 })
 export class WebsiteComponent implements OnInit {
   loaded: boolean;
-  @ViewChildren("section") sections: QueryList<ElementRef>;
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {
     setTimeout(() => {
@@ -23,9 +23,6 @@ export class WebsiteComponent implements OnInit {
   }
 
   sectionClicked(sectionName) {
-    this.sections
-      .toArray()
-      .find(e => e.nativeElement.getAttribute("id") == sectionName)
-      .nativeElement.scrollIntoView({ behavior: "smooth" });
+    this.router.navigate(["/website/", sectionName]);
   }
 }

@@ -55,7 +55,7 @@ export class EnterscreenComponent implements OnInit {
   open() {
     this.openBool = true;
     setTimeout(() => {
-      this.router.navigate([`/website`]);
+      this.router.navigate([`/website/home`]);
     }, 1000);
   }
 }

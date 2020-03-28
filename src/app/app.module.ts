@@ -12,6 +12,7 @@ import { SkillbarComponent } from "./components/skillbar/skillbar.component";
 import { ProjectsComponent } from "./components/projects/projects.component";
 import { DividerComponent } from "./components/divider/divider.component";
 import { ProjectComponent } from "./components/project/project.component";
+import { ContactComponent } from "./components/contact/contact.component";
 
 const routes = [
   {
@@ -20,7 +21,12 @@ const routes = [
   },
   {
     path: "website",
-    component: WebsiteComponent
+    component: WebsiteComponent,
+    children: [
+      { path: "home", component: HomeComponent },
+      { path: "projects", component: ProjectsComponent },
+      { path: "contact", component: ContactComponent }
+    ]
   }
 ];
 
@@ -34,7 +40,8 @@ const routes = [
     SkillbarComponent,
     ProjectsComponent,
     DividerComponent,
-    ProjectComponent
+    ProjectComponent,
+    ContactComponent
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
