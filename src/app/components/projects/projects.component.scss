@@ -1,3 +1,9 @@
 .projects {
-  margin-top: 10vh;
+  display: flex;
+  flex-flow: wrap;
+  margin: 2rem;
+  app-project {
+    margin: 2%;
+    width: 28%;
+  }
 }

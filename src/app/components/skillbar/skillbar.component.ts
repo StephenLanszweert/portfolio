@@ -14,7 +14,6 @@ export class SkillbarComponent implements OnInit {
   constructor(private sanitizer: DomSanitizer) {}
 
   ngOnInit() {
-    console.log(this.percentage);
     this.percentage_value = this.sanitizer.bypassSecurityTrustStyle(
       `--percentage: ${this.percentage}%`
     );

@@ -1,0 +1,13 @@
+<div [style.background-image]="imageSrc" class="project" data-aos="fade-down">
+  <p class="keyword">{{ keyword }}</p>
+  <div class="project-overlay">
+    <div class="project-words">
+      <ul>
+        <li *ngFor="let word of words">
+          {{ word }}
+        </li>
+      </ul>
+    </div>
+    <button>See more</button>
+  </div>
+</div>

@@ -2,10 +2,30 @@
   <img src="../../../assets/img/Logo1.png" alt="" class="logo" />
   <div class="links">
     <ul class="header-right">
-      <li class="active">Home</li>
-      <li>Projects</li>
-      <li>Blogs</li>
-      <li>Contact</li>
+      <li
+        [class.active]="activeSection == 'home'"
+        (click)="goToSection('home')"
+      >
+        Home
+      </li>
+      <li
+        [class.active]="activeSection == 'projects'"
+        (click)="goToSection('projects')"
+      >
+        Projects
+      </li>
+      <li
+        [class.active]="activeSection == 'blog'"
+        (click)="goToSection('blog')"
+      >
+        Blogs
+      </li>
+      <li
+        [class.active]="activeSection == 'contact'"
+        (click)="goToSection('contact')"
+      >
+        Contact
+      </li>
     </ul>
   </div>
 </header>

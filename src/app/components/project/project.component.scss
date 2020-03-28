@@ -1,0 +1,68 @@
+.project {
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .project-overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    background-color: #373232e7;
+    .project-words {
+      width: 100%;
+      position: absolute;
+      top: 10%;
+      margin-left: auto;
+      margin-right: auto;
+      li {
+        border-radius: 15px;
+        display: inline-block;
+        background-color: rgba(126, 121, 121, 0.8);
+        color: white;
+        padding: 3%;
+        margin: 3%;
+      }
+    }
+    button {
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 5%;
+      position: absolute;
+      bottom: 15%;
+      width: 50%;
+      left: 26%;
+      border-radius: 15px;
+      background-color: #4fc2b9;
+      color: white;
+      border: none;
+      transition: 0.5s all ease-in;
+      &:hover {
+        background-color: #2674b5;
+      }
+    }
+  }
+  &:hover {
+    .project-overlay {
+      opacity: 1;
+      top: 0;
+    }
+  }
+  .keyword {
+    padding: 2%;
+    position: absolute;
+    background-color: #447e79;
+    width: 64%;
+    right: -23%;
+    top: 8%;
+    transform: rotate(45deg);
+    text-align: center;
+    color: white;
+  }
+}

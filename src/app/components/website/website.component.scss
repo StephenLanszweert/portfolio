@@ -25,13 +25,9 @@ $height: 200vh;
   width: 100vw;
   min-height: $height;
   z-index: 2;
-  background-color: #373232e7;
+  background-color: #373232d7;
 }
 
 .loaded {
   opacity: 1;
-}
-
-section {
-  min-height: 100vh;
 }
