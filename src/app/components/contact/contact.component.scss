@@ -12,6 +12,7 @@
     border-radius: 15px;
     background-color: #4fc2b88c;
     .contact-details {
+      overflow: hidden;
       width: 40%;
       align-self: center;
       margin-top: 1rem;
@@ -25,9 +26,10 @@
       label,
       input,
       textarea {
+        overflow: hidden;
         display: block;
         width: 96%;
-        padding: 2%;
+        padding: 1%;
         border: none;
       }
       input,
